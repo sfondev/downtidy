@@ -7,6 +7,7 @@ Tried to use only the Python std library.
 
 OBS:It should work, but it needs more testing (Not responsible for any files lost to the void 😅).
 
+black formatter settings: default
 ## TODO
 
     + Comment the code more
