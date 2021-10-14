@@ -3,7 +3,6 @@
 
 from os import mkdir, scandir, remove
 from os.path import expanduser, join, split, splitext, exists
-
 from subprocess import PIPE, run
 from sys import platform
 
