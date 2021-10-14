@@ -16,4 +16,6 @@ black formatter settings: default
     + Maybe add progressbars (probably unnecessary)
     + Maybe add color to the error messages and to the fail to tidy 
     + Fix bugs or improve performance where needed
+    + Change paths from strings to Path types/class (is it better?)
     + Maybe Add "--folder" that allows the folder to tidy to be given as an argument
+    + Maybe reimplement on a faster language,like C++ or Rust, once I learn them properly (like I even know Python properly :LUL:)
