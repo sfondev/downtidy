@@ -549,7 +549,7 @@ def main():
                         print("Created a Downloads folder at your user home directory")
                     except:
                         raise ValueError(
-                            "Failed to create create a downloads folder.\nExiting downtidy..."
+                            "Failed to create a downloads folder in the home directory ($HOME).\nExiting downtidy..."
                         )
 
     else:
