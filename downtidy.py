@@ -420,7 +420,7 @@ def tidy_files(to_tidy: tuple):
                     files_not_tidied += 1
         else:
             print(
-                "Some case I didn remember FIXME!!!!\
+                "Some case I didn't remember FIXME!!!!\
             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
             )
             files_not_tidied += 1
