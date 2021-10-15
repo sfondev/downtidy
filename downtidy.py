@@ -5,15 +5,13 @@ from os import mkdir, scandir, remove
 from os.path import expanduser, join, split, splitext, exists
 from subprocess import PIPE, run
 from sys import platform
-
-
-# import tqdm # add progress bars ? maybe kinda useless if run frequently to tidy a small number of files
-# import configparser,json # put config on an external file ?
-# import argparse # for --folder option ?
 from shutil import move
 from hashlib import sha256
 from datetime import datetime
 
+# import tqdm # add progress bars ? maybe kinda useless if run frequently to tidy a small number of files
+# import configparser,json # put config on an external file ?
+# import argparse # for --folder option ?
 
 __author__ = "xCoolHat"
 
@@ -429,7 +427,7 @@ def tidy_files(to_tidy: tuple):
 def compare_file_hashes(path_src, path_dst):
 
     src, dst = sha256(), sha256()
-
+    # TODO: maybe needs try except since it is an IO operation cons: slowdown probably
     with open(path_src, "rb") as f, open(path_dst, "rb") as f2:
         while True:
             data = f.read(BUFFER_SIZE)
@@ -446,7 +444,7 @@ def compare_file_hashes(path_src, path_dst):
 
 
 def main():
-
+    # FIXME: not tested on darwin or cygwin environments
     if platform == "win32" or platform == "cygwin":
         # reference: "adapted" from here https://stackoverflow.com/a/35851955 uses ctypes winapis
         from ctypes import (
@@ -545,7 +543,7 @@ def main():
                     )
                     try:
                         mkdir(downloads_path)
-                        print("Created a Downloads folder at your user home directory")
+                        print("Created a Downloads folder at your user home directory.")
                     except:
                         raise ValueError(
                             "Failed to create a downloads folder in the home directory ($HOME).\nExiting downtidy..."
