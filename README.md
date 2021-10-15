@@ -20,4 +20,5 @@ black formatter settings: default
     + Maybe add "--folder" argument that allows the folder path given to be used as target to be tidied
     + Maybe add "--dry-run" or "--dry" to simulate running the script on the downloads folder (or in the folder given to "--folder" if I end up implementing that)
     + Maybe add different "--log-level" that allows to choose from completely silent,log to stdout(default), log to a file in the root of the folder to be tied (add exception for this file not to be tidied)
-    + Maybe reimplement in a faster language(like C++ or Rust) or in other scripting language (like Bash or POSIX shell), once I learn them properly (like I even know Python properly :LUL:)
+    + Maybe add total time taken to the log
+    + Maybe reimplement in a faster language(like C++ or Rust) or in other scripting language (like Bash or POSIX shell), once I learn them properly (like I even know Python properly :LUL:)  
