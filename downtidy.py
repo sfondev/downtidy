@@ -74,7 +74,7 @@ sub_folders = {
         "root": None,
     },
     "Archives": {
-        "ISOs": ("iso", "vdi", "vhd", "squashfs", "bin"),
+        "ISOs": ("iso", "vdi", "img", "vhd", "squashfs", "bin"),
         "Packages(APKs and etc)": (
             "dmg",
             "apk",
