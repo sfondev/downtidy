@@ -24,4 +24,4 @@ black formatter settings: default
 * Maybe add different "--log-level" that allows to choose from completely silent,log to stdout(default), log to a file in the root of the folder to be tied (add exception for this file not to be tidied)
 * Maybe add total time taken to the log
 * Maybe reimplement in a faster language(like C++ or Rust) or in other scripting language (like Bash or POSIX shell), once I learn them properly (like I even know Python properly :LUL:)
-* Check if pyxdg or is installed and use to get the downloads folder since the lib is done by the xdg ppl iirc  
+* Check if pyxdg is installed and if available use it to get the downloads folder since the library is done by the xdg devs IIRC
