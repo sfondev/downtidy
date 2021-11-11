@@ -14,7 +14,7 @@ black formatter settings: default
 ## TODO
 
 * Comment the code properly
-* Maybe add reading config from JSON or similar (from $HOME/.config/downtidy.<\something>)
+* Maybe add reading config from JSON or similar (from $HOME/.config/downtidy.\<something>)
 * Maybe add progress bars (probably unnecessary and will add dependencies ("--progress"? check if tqdm is already installed?))
 * Maybe add color to the error "log" messages and to the exceptions strings (ANSI Escape codes?)
 * Fix bugs and improve performance where needed (Python+I/O are slow,so probably can only optimize memory used, stupidly made for loops or hashing time by just hashing a fixed number of blocks (might cause collisions))
